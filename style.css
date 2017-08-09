@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  border: 0;
+  font-family: monospace;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('http://res.cloudinary.com/dxmi9d3vj/image/upload/v1502164119/cover_urpynz.jpg');
+  background-size: cover;
+}
+
+.keyboard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: -50%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.key {
+  font-size: x-large;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  border: 0.2rem solid black;
+  border-radius: 10%;
+  width: 6rem;
+  margin-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: white;
+  transition: all 0.07s ease-out;
+}
+
+.playing {
+  border-color: gold;
+  transform: scale(1.1);
+  box-shadow: 0 0 1rem #ffc600;
+  font-size: xx-large;
+}
+
+.key > span {
+  display: block;
+  font-size: large;
+  color: gold;
+}
